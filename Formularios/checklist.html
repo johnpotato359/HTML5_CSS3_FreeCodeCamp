@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1>Recrutamento Armada Intergalática</h1>
+        <p>Para saber mais sobre a Armada Intergalática clique <a href="https://istoe.com.br/31829_O+SANTO+QUE+VEIO+DO+ESPACO/" target="_blank">aqui</a></p>
     </header>
     <main>
         <p>Formulário para recrutamento das forças da Armada Intergalática comandanda pela lenda Ashtar Sheran.<br>
@@ -16,20 +17,31 @@
         </p>
         <form method="post">
             <label for="nome">
-                <p>Nome <input type="text" id="nome" placeholder="Ashtar" required></p>
-            </label>
+                Nome <input type="text" id="nome" placeholder="Ashtar" value="nome" required>
+            </label><br>
             <label for="sobrenome">
-                <p>Sobrenome <input type="text" id="sobrenome" placeholder="Sheran" required></p>
-            </label>
+                Sobrenome <input type="text" id="sobrenome" placeholder="Sheran" value="sobrenome" required>
+            </label><br>
             <label>
-                <p>Idade <input type="number" id="idade" placeholder="anos" required></p>
+                Idade <input type="number" id="idade" placeholder="anos" value="idade" required>
+            </label><br>
+            <label for="masculino">
+                <input type="radio" id="genero-masculino" name="masculino-feminino" value="masculino" checked>Masculino
             </label>
-            <label for="genero">
-                <p><input type="radio" id="genero-masculino" name="masculino-feminino" checked>Masculino</p>
+            <label for="feminino">
+                <input type="radio" id="genero-feminino" name="masculino-feminino" value="feminino">Feminino
+            </label><br>
+            <p><h3>Qual(is) planeta(s) deseja patrulhar</h3></p>
+            <label for="terra">
+                <input type="checkbox" id="planeta-terra" name="planeta-residir" value="terra"> Terra
             </label>
-            <label>
-                <p><input type="radio" id="genero-feminino" name="masculino-feminino">Feminino</p>
+            <label for="marte">
+                <input type="checkbox" id="planeta-marte" name="planeta-residir" value="marte"> Marte
             </label>
+            <label for="venus">
+                <input type="checkbox" id="planeta-venus" name="planeta-residir" value="venus"> Vênus
+            </label><br>
+            <p><button type="submit">Enviar</button></p>
         </form>
     </main>
 </body>
