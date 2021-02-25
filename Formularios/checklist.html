@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Recrutamento Armada Intergalática</h1>
+    </header>
+    <main>
+        <p>Formulário para recrutamento das forças da Armada Intergalática comandanda pela lenda Ashtar Sheran.<br>
+        Para se alistar basta preencher o formulário abaixo.
+        </p>
+        <form method="post">
+            <label for="nome">
+                <p>Nome <input type="text" id="nome" placeholder="Ashtar" required></p>
+            </label>
+            <label for="sobrenome">
+                <p>Sobrenome <input type="text" id="sobrenome" placeholder="Sheran" required></p>
+            </label>
+            <label>
+                <p>Idade <input type="number" id="idade" placeholder="anos" required></p>
+            </label>
+            <label for="genero">
+                <p><input type="radio" id="genero-masculino" name="masculino-feminino" checked>Masculino</p>
+            </label>
+            <label>
+                <p><input type="radio" id="genero-feminino" name="masculino-feminino">Feminino</p>
+            </label>
+        </form>
+    </main>
+</body>
+</html>
