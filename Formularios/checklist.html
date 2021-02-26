@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prática Forms</title>
 </head>
+<style>
+    h1{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .blue-text{
+        color: blue;
+    }
+    p{
+        font-size: 24px;
+    }
+</style>
 <body>
     <header>
-        <h1>Recrutamento Armada Intergalática</h1>
+        <h1 class="blue-text">Recrutamento Armada Intergalática</h1>
         <p>Para saber mais sobre a Armada Intergalática clique <a href="https://istoe.com.br/31829_O+SANTO+QUE+VEIO+DO+ESPACO/" target="_blank">aqui</a></p>
     </header>
     <main>
@@ -22,7 +33,7 @@
             <label for="sobrenome">
                 Sobrenome <input type="text" id="sobrenome" placeholder="Sheran" value="sobrenome" required>
             </label><br>
-            <label>
+            <label for=idade>
                 Idade <input type="number" id="idade" placeholder="anos" value="idade" required>
             </label><br>
             <label for="masculino">
@@ -33,7 +44,7 @@
             </label><br>
             <p><h3>Qual(is) planeta(s) deseja patrulhar</h3></p>
             <label for="terra">
-                <input type="checkbox" id="planeta-terra" name="planeta-residir" value="terra"> Terra
+                <input type="checkbox" id="planeta-terra" name="planeta-residir" value="terra" checked required> Terra
             </label>
             <label for="marte">
                 <input type="checkbox" id="planeta-marte" name="planeta-residir" value="marte"> Marte
